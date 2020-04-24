@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Routes from 'components/routes';
+import Routes from './app/components/routes';
+import { registerRootComponent } from 'expo';
+
 
 class App extends Component {
   render() {
@@ -7,4 +9,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default registerRootComponent(App);
